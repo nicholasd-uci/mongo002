@@ -12,6 +12,11 @@ const Item = new Schema({
     isDone: {
         type: Boolean,
         required: true
+    },
+    // this is basically like foreign key // Making a relation with user and Item 
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: 'User'
     }
 }, { timestamps: true })
 
