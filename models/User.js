@@ -3,16 +3,12 @@ const { model, Schema } = require('mongoose')
 // schema is the overall layout of the data //
 // model is the the collection //
 
-const Item = new Schema({
-    text: {
+const User = new Schema({
+    name: {
         type: String,
         unique: true,
-        required: true
-    },
-    isDone: {
-        type: Boolean,
         required: true
     }
 }, { timestamps: true })
 
-module.exports = model('Item', Item)
+module.exports = model('User', User)
