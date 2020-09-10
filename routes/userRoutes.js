@@ -19,8 +19,8 @@ router.post('/users/login', (req, res) => {
   })
 })
 
-router.get('/users/post', passport.authenticate('jwt'), (req, res) => {
-    res.send
+router.get('/users/items', passport.authenticate('jwt'), (req, res) => {
+  res.json(req.user)
 })
 
 // GET all users
