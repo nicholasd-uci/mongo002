@@ -1,4 +1,3 @@
-
 axios.get('/api/users/items', {
     headers: {
       Authorization: `Bearer ${localStorage.getItem('user')}`
